@@ -1,0 +1,139 @@
+body {
+    background-color: white;
+}
+
+
+/* styling the navbar */
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(124, 120, 120)
+}
+
+ul li {
+    display: inline;
+    color: white;
+    padding: 2px 4px;
+    text-decoration: none;
+    font-size: 2em;
+    list-style-type: none;
+}
+
+.nav li {
+    margin-left: 20%;
+    /* color: white; */
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/* styling the footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.end li {
+    display: block;
+}
+
+
+/* styling the image */
+
+#pic {
+    position: static;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    float: right;
+    margin-right: 10%;
+    margin-top: 0;
+}
+
+img {
+    float: right;
+    margin-right: 20%;
+}
+
+h1 {
+    position: relative;
+    top: 5cm;
+    margin-top: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+/* styling the paragraph */
+
+#intro {
+    display: flexbox;
+    position: static;
+    width: 40%;
+    top: 0;
+    left: 0;
+    font-size: 1.5em;
+    font-family: Helvetica;
+    color: black;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-top: 250px;
+    margin-left: 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .nav li {
+        display: block;
+        margin-left: 0;
+    }
+    #intro {
+        text-align: justify;
+        width: fit-content;
+        margin-top: 480px;
+        margin-right: 35px;
+        margin-left: 0;
+    }
+    .footer {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    img {
+        display: inline;
+        margin-right: 15%;
+    }
+    #pic {
+        position: relative;
+        margin-right: 20px;
+        float: none;
+        margin-left: 400px;
+    }
+    h1 {
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #pic {
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+}
