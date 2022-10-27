@@ -5,179 +5,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Sireesha Koduri</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <style>
-    body {
-        background-color: white;
-    }
-    /* styling navbar */
-    
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;}
+  /* styling the navbar */
     .navbar {
-        color: white;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: rgb(124, 120, 120)
+        background-color: rgb(17, 12, 12)
     }
     
-    ul li {
-        color: white;
-        display: inline;
-        padding: 2px 4px;
-        text-decoration: none;
-        font-size: 2em;
+   .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+    }
+
+.nav li {
+  float: left;
+  list-style: none;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav li a:hover {
+  background-color: crimson;
+}
+
+    .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+.info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 50%;
+}
+
+.info li {
+  padding: 15px;
+  margin-bottom: 7px;
+  background-color: rgb(246, 160, 177);
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.pic{
+  margin-left: 60px ;
+  margin-top: 70px;
+}
+.skills{
+        width:50%;
+        font-weight: bolder;
+        margin-right: 10%;
         list-style-type: none;
-        font-family: Helvetica;
-    }
     
-    .nav li {
-        margin-left: 20%;
-        color: white;
     }
-    
-    li a:hover {
-        background-color: white;
+   .skills ul li{
+        list-style-type: none;
+        
+        
     }
-    /* styling footer */
+/* styling the footer */
     
     .footer {
+        
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        color: white;
-        text-align: center;
-        margin: 0;
         padding: 0;
+        list-style-type: none;
+        background-color: crimson;
     }
     
     .end li {
-        display: block;
-    }
-    /* styling the content */
-    
-    .row {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-        margin-left: 1.5cm;
-    }
-    /* Styling h2 and paragraphs */
-    
-    p {
-        font-family: Helvetica, sans-serif;
-        font-size: 1.5em;
-        text-align: justify;
-        margin-left: 150px;
-        margin-top: 10px;
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 25%;
     }
     
-    h2 {
-        font-family: Helvetica, sans-serif;
-        text-decoration: underline;
-        font-size: 2em;
-        color: black;
-        text-align: justify;
-        margin-top: 100px;
-        margin-left: 150px;
-    }
-    /* styling the boxes */
-    
-    .column {
-        display: inline;
-        width: 35%;
-        height: 350px;
-        float: left;
-        padding: 10px;
-        margin: 4px;
-        text-align: center;
-        margin-top: 68px;
-        background-color: rgb(209, 202, 202);
-        text-overflow: hidden;
-        color: black;
-        margin-left: 150px;
+    a {
+        text-decoration: none;
     }
     
-    .image {
-        margin-right: 230px;
-    }
-    
-    h3 {
-        font-size: 2em;
-    }
-    
-    section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* Media queries */
-    
-    @media only screen and (min-width: 992px) and (max-width: 1500px) {
-        .column {
-            width: 75%;
-            margin-left: 150px;
-            overflow: scroll;
-        }
-        p {
-            margin-left: 200px;
-        }
-        .image {
-            margin-left: 10px;
-        }
-        .footer {
-            position: relative;
-            top: 0;
-            left: 0;
-        }
-    }
-    
-    @media screen and (min-width: 600px) and (max-width: 992px) {
-        .column {
-            width: 100%;
-            margin-left: 0;
-            overflow: scroll;
-        }
-        .nav li {
-            display: block;
-            margin-left: 0;
-        }
-        .footer {
-            position: relative;
-            top: 0;
-            left: 0;
-        }
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .column {
-            width: 100%;
-            margin-left: 0;
-            overflow: scroll;
-        }
-        p {
-            margin-left: 0;
-        }
-        .nav li {
-            display: block;
-            margin-left: 0;
-        }
-        .footer {
-            position: relative;
-            top: 0;
-            right: 0;
-        }
-        .image {
-            margin-right: 10px;
-        }
-    }
-</style>
 
+</style>
 <body>
     <div class="navbar">
         <ul class="nav">
-            <li><a href=" index.html " target="_blank ">Home</a>
+            <li><a href="index.html" target="_blank ">Home</a>
             </li>
             <li><a href="About.html " target="_blank ">About</a>
             </li>
@@ -185,63 +134,54 @@
             </li>
         </ul>
     </div>
-    <div class="column">
-        <div class="image"> <img src="pics/programming.png" alt="Web Designing tools" width="100px"> </div>
-        <h2>What I learned</h2>
-        <p>HTML and CSS -ReDi Hamburg</p>
-        <p>Able to create a Website using Html and CSS.</p>
-        <p>Basics of Git and GitHub -Google</p>
-    </div>
-    <div class="column">
-        <div class="image"><img src="pics/JS.png" alt="Programming tools" width="100px"></div>
-        <h2> Inquisitive.. </h2>
-        <p> Javascript/jQuery and libraries like React/Angular.</p>
-        <p>Adobe illustrator.</p>
-        <p>Search-engine optimization. </p>
-
-    </div>
-    <div class="column">
-        <div class="image"><img src="pics/lang.png" alt="languages" width="100px"></div>
-        <h2> Languages I Know.. </h2>
-        <p id="lang ">English - Bilingual Proficiency</p>
-        <p id="lang ">German - Working Proficiency</p>
-        <p id="lang "> Hindi and Telugu - Bilingual Proficiency</p>
-    </div>
-    <div class="column">
-        <h3>I like... </h3>
-        <div class="likes">
-            <section>
-                <p style="padding-left:6px; margin-top: 0 ;">Travelling </p>
-                <img src="pics/travel.png" alt="travelling" width="40px" style="margin-top: 0; padding-left: 10px;">
-            </section>
-            <section>
-                <p style="padding:6px; margin-top: 0 ;"> Shopping</p>
-                <img src="pics/shopping.png " alt="shopping " width="30px " style="margin-top: 0; padding-left: 10px;">
-            </section>
-            <section>
-                <p style=" padding:6px; margin-top: 0; ">Coffee</p>
-                <img src="pics/coffee.png " alt="coffee " width="40px " style="margin-top: 0; padding-left: 10px;">
-            </section>
-
-            <section>
-                <p style="padding:6px; margin-top: 0;">Dogs</p>
-                <img src="pics/puppy.png " alt="puppy " width="40px " style="margin-top: 0; padding-left: 10px;">
-            </section>
-
+    <div class="row">
+        <div class="col-4 info">
+          <ul>
+            <li>Education: Masters in BioChemistry</li>
+            <li>Work Experience: Healthcare Documentation Specialist</li>
+            <li>Career Break: Relocated to Germany and raised a family</li>
+            
+          </ul>
+          <section class="pic"><img src = "pics/project.png",   alt =" Project" width="300px"> 
+          </section>
         </div>
-    </div>
+        <div class="col-8 skills">
+            <h1>Trainings</h1>
+                <li> HTML and CSS <br>
+                    ReDI School of Digital Integration Hamburg (
+                    04/2022 - 06/2022)</li>
+                    <hr>
+                <li>ServiceNow NextGen Externship Online Training  
+                    (08/2022 - 10/2022)<br>
+                    ServiceNow Fundamentals - understanding of ServiceNow best practices ServiceNow Portal Fundamentals - obtained Micro-Certification Scripting and Debugging in ServiceNow<br>
+                    ITSM Fundamentals<br>
+                    Application Development Fundamentals<br>
+                    Flow Designer - obtained Micro-Certification <br>
+                    Integration Hub - obtained Micro-Certification<br>
+                    Mobile Development Essentials and UI Builder<br>
+                    HTML, CSS, and JavaScript Fundamentals (Codeacademy) Integrating with GitHub & GitLab</li>   
+            <h1>Project</h1>
+            <p>AdoPets- ServiceNow application developed as a solution to the current issues while adopting a Pet.</p>
+              <li>Established the project scope, a good team player.</li>
+              <li>Developed a Service Portal with a simple user interface.</li>
+              <li>Implemented Flow designer to automate the adoption process, update the pet information, and send emails to users and managers.</li>
+              <li> Implemented virtual agent, guided tours, record producers, slack integration, and configured workspaces for managers.</li>
+            
+      </div>
+      
+    
+    <div class="footer">
+        <ul class="end">
+            <li>
+                <a href="https://www.linkedin.com/in/sireesha-koduri/" target="_blank "><img src="pics/linkedin.png " alt="Linkedin " width="50px "></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/me/" target="_blank "><img src="pics/facebook-new.png " alt="Facebook " width="50px "></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank "><img src="pics/instagram.png " alt="Instagram " width="50px "> </a>
+            </li>
 
-    <div class=" footer ">
-        <ul class="end ">
-            <li>
-                <a href="https://www.linkedin.com/in/sireesha-koduri/ " target="_blank "><img src="pics/linkedin.png " alt="Linkedin " width="50px "></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/me/ " target="_blank "><img src="pics/facebook-new.png " alt="Facebook " width="50px "></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ " target="_blank "><img src="pics/instagram.png " alt="Instagram " width="50px "> </a>
-            </li>
 
         </ul>
 
